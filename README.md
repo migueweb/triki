@@ -1,69 +1,55 @@
-# React + TypeScript + Vite
+# Triki with React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This a tic tac toe game built with `Vite` + `React`.
 
-Currently, two official plugins are available:
+> "Triqui" (triki) is the colombian name for "tic tac toe".
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The project works, but it still under construction and improvement.
 
-## Expanding the ESLint configuration
+## Getting started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. Clone the repo
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+```bash
+git clone https://github.com/migueweb/triki
+```
+2. Install dependencies
+```bash
+pnpm install
+```
+(you can use the packcage manager of your preference such as `npm` or `yarn`)
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+3. Run the project
+```bash
+pnpm dev
+# or
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+4. Happy coding! 😸💻
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+##  Contributing
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Contributions are welcome! 🚀  
+Suggestions are always appreciated — feel free to [open an issue](./issues) with your proposal.  
+
+### How to contribute
+1. **Fork** the repository and create your branch from `main`.  
+2. **Validate the code** with the linter before submitting.  
+3. **Use Conventional Commits** for your commit messages (e.g., `feat: new button added`).  
+4. Open a **Pull Request** and describe your changes.  
+
+### Tips
+- Keep PRs focused and small — easier to review and merge.  
+- Check existing issues and PRs before opening new ones.  
+- Be respectful and constructive in discussions.  
+
+Contributions via **Pull Requests** are the preferred way to collaborate.  
+
+## Author
+[@migueweb](https://github.com/migueweb)
+
+## Contributors
+<a href="https://github.com/migueweb/triki/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=migueweb/triki" alt="Contributors" />
+</a>
