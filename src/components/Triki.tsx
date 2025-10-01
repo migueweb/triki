@@ -1,5 +1,6 @@
 import { useTriki } from "../hooks/useTriki";
 import type { SquareProps } from "../types/triki";
+import Circle, { Times } from "./Player";
 
 export default function Triki() {
   const { player, trikiStructure, handleClick, handleRestartGame } = useTriki();
@@ -16,11 +17,11 @@ export default function Triki() {
         <section className="grid grid-cols-3 gap-3 w-fit">
           {trikiStructure.map((square) => (
             <Square
-            key={`square-${square.position}`}
-            onClick={() => handleClick(square.position)}
-            content={square.content}
-            position={square.position}
-            className={square.className+" z-10"}
+              key={`square-${square.position}`}
+              onClick={() => handleClick(square.position)}
+              position={square.position}
+              className={square.className+" z-10"}
+              content={square.content}
             />
           ))}
         </section>
@@ -34,8 +35,9 @@ export default function Triki() {
   );
 }
 
-function Square({ onClick, content, position, className }: SquareProps) {
-  const styles:string = `bg-gray-400/10 h-32 w-32 p-0 backdrop-blur-sm hover:bg-gray-400/20 duration-300 border border-zinc-50/10 text-4xl text-white`;
+function Square({ onClick, position, className, content }: SquareProps) {
+  const styles:string = `bg-gray-400/10 h-32 w-32 p-4 p-0 backdrop-blur-sm hover:bg-gray-400/20 duration-300 border border-zinc-50/10 text-4xl text-white`;
+  
   return (
     <button
       type="button"
@@ -43,7 +45,8 @@ function Square({ onClick, content, position, className }: SquareProps) {
       value={position}
       className={styles+" "+className}
     >
-      {content}
+      {content == "X" && <Times/>}
+      {content == "O" && <Circle/>}
     </button>
   );
 }
