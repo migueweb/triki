@@ -1,0 +1,20 @@
+<!-- Designed by https://migue.website -->
+<svg width="260" height="260" viewBox="0 0 260 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_85_14)">
+<mask id="path-1-inside-1_85_14" fill="white">
+<rect x="92" width="76" height="76" rx="6"/>
+</mask>
+<rect x="92" width="76" height="76" rx="6" stroke="#253446" stroke-width="28" mask="url(#path-1-inside-1_85_14)"/>
+<circle cx="38" cy="38" r="31" stroke="#253446" stroke-width="14"/>
+<circle cx="132" cy="133" r="31" stroke="#253446" stroke-width="14"/>
+<path d="M193.5 9.5L251.186 67.1863" stroke="#253446" stroke-width="14" stroke-linecap="round"/>
+<path d="M103.5 190.5L161.186 248.186" stroke="#253446" stroke-width="16" stroke-linecap="round"/>
+<line x1="193" y1="68.6455" x2="252.645" y2="9" stroke="#253446" stroke-width="14" stroke-linecap="round"/>
+<line x1="103" y1="248.231" x2="161.231" y2="190" stroke="#253446" stroke-width="16" stroke-linecap="round"/>
+</g>
+<defs>
+<clipPath id="clip0_85_14">
+<rect width="260" height="260" fill="white"/>
+</clipPath>
+</defs>
+</svg>
