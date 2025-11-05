@@ -1,0 +1,33 @@
+@import "tailwindcss";
+:root {
+  --success: #0b800b;
+}
+
+.btn-success-1 {
+  @apply bg-green-500/20;
+  transition: ease-in-out 500ms;
+  animation: pop 200ms forwards ease-in-out;
+}
+.btn-success-2 {
+  @apply bg-green-500/20;
+  transition: ease-in-out 750ms;
+  animation: pop 400ms forwards ease-in-out;
+
+}
+.btn-success-3 {
+  @apply bg-green-500/20;
+  transition: ease-in-out 1s;
+  animation: pop 600ms forwards ease-in-out;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.16);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
